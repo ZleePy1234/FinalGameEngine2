@@ -12,6 +12,7 @@ public class PlayerEquipmentScript : MonoBehaviour
     public GameObject cameraScreen;
 
     public GameObject gunEquipment;
+    public Animator gunAnimator;
     public enum EquippedItem
     {
         None,
@@ -23,6 +24,7 @@ public class PlayerEquipmentScript : MonoBehaviour
     public bool pickedUpCamera = false;
     public bool pickedUpGun = false;
     public bool pickedUpCard = false;
+    public bool pickedUpFlower = false;
 
     public enum CameraScreen
     {
@@ -147,7 +149,9 @@ public class PlayerEquipmentScript : MonoBehaviour
         isReloading = true;
         canFire = false;
         currentAmmo = 0;
+        gunAnimator.SetTrigger("Reload");
         yield return new WaitForSeconds(reloadTime);
+        Debug.Log("Reloaded!");
         if (reserveAmmo >= 12)
         {
             reserveAmmo -= 12;
@@ -190,6 +194,7 @@ public class PlayerEquipmentScript : MonoBehaviour
                 {
                     Debug.Log("Missed shot");
                 }
+                gunAnimator.SetTrigger("Fire");
                 currentAmmo--;
             }
             else

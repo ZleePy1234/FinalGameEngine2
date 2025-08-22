@@ -50,7 +50,7 @@ public class EnemyBehaviours : MonoBehaviour
         ai = GetComponent<AItarget>();
         player = GameObject.Find("PlayerCapsule");
         audioSource = GetComponent<AudioSource>();
-        playerEquipment = GameObject.FindWithTag("Player").GetComponent<PlayerEquipmentScript>();
+        playerEquipment = GameObject.Find("Player").GetComponent<PlayerEquipmentScript>();
     }
 
     // Update is called once per frame

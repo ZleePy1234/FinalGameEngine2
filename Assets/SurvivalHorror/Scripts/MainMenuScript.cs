@@ -45,7 +45,7 @@ public class MainMenuScript : MonoBehaviour
     private async void Menu_StartGameAsync()
     {
         Debug.Log("Async Game Load Started");
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Game");
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Penrose");
         while (!asyncLoad.isDone)
         {
             await System.Threading.Tasks.Task.Yield();

@@ -20,7 +20,7 @@ public class RoomSwitcherScript : MonoBehaviour
 
     void Start()
     {
-        roomNameText.text = "Press E to go to " + roomName;
+        roomNameText.text = "Press F to go to " + roomName;
         roomTextObject.SetActive(false);
     }
     void OnTriggerEnter(Collider other)

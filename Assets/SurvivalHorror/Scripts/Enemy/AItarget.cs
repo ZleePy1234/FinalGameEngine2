@@ -27,6 +27,8 @@ public class AItarget : MonoBehaviour
         animator = GetComponent<Animator>();
         SaveSpawnPos();
         originalSpeed = agent.speed;
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
 
     }
 
