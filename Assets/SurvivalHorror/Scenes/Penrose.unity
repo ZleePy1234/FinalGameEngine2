@@ -20765,6 +20765,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1314816660812433464, guid: 5eca41cc3a2fefa4aac82d4a2a6180f3, type: 3}
   m_PrefabInstance: {fileID: 1125339752}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &314505487 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3789887613311047568, guid: 5eca41cc3a2fefa4aac82d4a2a6180f3, type: 3}
+  m_PrefabInstance: {fileID: 1125339752}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb1d1acddee6a143811c93fdcb3db91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
 --- !u!1 &338108904
 GameObject:
   m_ObjectHideFlags: 0
@@ -23165,6 +23176,11 @@ Transform:
   - {fileID: 1095513595}
   m_Father: {fileID: 5506840720714272076}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!4 &730751119 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2171193068795884854, guid: 63ce7e15c52f6b940930c1adabe5e77f, type: 3}
+  m_PrefabInstance: {fileID: 1516437030}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &739797492
 GameObject:
   m_ObjectHideFlags: 0
@@ -24197,6 +24213,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ccbc7a650a0694985b9234899554bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  playerTransform: {fileID: 730751119}
+  health: 0
+  hasCamera: 0
+  hasGun: 0
+  hasKey: 0
+  hasFlower: 0
+  reserveAmmo: 0
+  currentAmmo: 0
+  cameraTape: 0
+  dialogueElster: {fileID: 314505487}
+  dialogueKolibri: {fileID: 1840036977}
+  dialogueAra: {fileID: 1821185609}
+  dialogueElsterLine: 0
+  dialogueKolibriLine: 0
+  dialogueAraLine: 0
+  saveKey: 286
+  loadKey: 287
 --- !u!4 &842333227
 Transform:
   m_ObjectHideFlags: 0
@@ -32826,6 +32859,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 643744224914644037, guid: af7368fec2af3024f82e3caefb4a4877, type: 3}
   m_PrefabInstance: {fileID: 787671494}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1821185609 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2945647487215007397, guid: af7368fec2af3024f82e3caefb4a4877, type: 3}
+  m_PrefabInstance: {fileID: 787671494}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb1d1acddee6a143811c93fdcb3db91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
 --- !u!43 &1834498448
 Mesh:
   m_ObjectHideFlags: 0
@@ -33004,6 +33048,17 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!114 &1840036977 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4474105264121649989, guid: 0f1212f52af6dde46983ecf7f88a70ec, type: 3}
+  m_PrefabInstance: {fileID: 1554174980}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb1d1acddee6a143811c93fdcb3db91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
 --- !u!1 &1840408791
 GameObject:
   m_ObjectHideFlags: 0
